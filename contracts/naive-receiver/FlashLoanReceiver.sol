@@ -52,7 +52,11 @@ contract FlashLoanReceiver is IERC3156FlashBorrower {
     }
 
     // Internal function where the funds received would be used
-    function _executeActionDuringFlashLoan() internal { }
+    function _executeActionDuringFlashLoan() internal { 
+        // pool.flashLoan(
+        //     this,ETH,10 ether,bytes("")
+        // );
+    }
 
     // Allow deposits of ETH
     receive() external payable {}
